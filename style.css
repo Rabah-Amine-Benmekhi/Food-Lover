@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    background: url('img/home_bg.jpeg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+
+
+
+/* Utility Classes  */
+
+.primary-text {
+    color: #e4b95b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 23px;
+}
+
+
+.primary-btn {
+    color: white;
+    border: 3px solid white;
+}
+
+.primary-btn:hover {
+    color: black;
+    background-color: #e4b95b;
+}
+
+.secondary-btn {
+    color: white;
+    background-color: rgb(35, 35, 123);
+}
+
+.secondary-btn:hover {
+    color: black;
+    background-color: #e4b95b;
+}
+
+/* Header start  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header nav ul {
+
+    list-style: none;
+    margin-right: 40px;
+}
+
+.header nav ul li a {
+    font-weight: 600;
+    color: white;
+
+    margin-left: 25px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header img {
+    width: 80px;
+    margin-left: 40px;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+.content {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.content p {
+    font-weight: 400;
+    color: white;
+    margin: 20px 0 40px;
+
+}
+
+.content h1 {
+    color: white;
+}
+
+.content a {
+    color: white;
+}
+
+.header::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+header * {
+    z-index: 5;
+}
+
+/* header end  */
+
+/* about section start  */
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 40px 70px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+
+.about-content {
+    display: flex;
+}
+
+.title p {
+    font-weight: 700;
+    color: grey;
+    padding: 20px 0 40px;
+}
+
+.about-content p {
+    color: grey;
+}
+
+.about-content img {
+    margin-left: 10px;
+}
+
+.about-content a {
+    margin-top: 25px;
+}
+
+.about .title,
+.offers .title2,
+.title3,
+.gallery .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* about section end  */
+/* offers section start  */
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.offers {
+    padding: 30px;
+    height: 90vh;
+    background: url("img/offer-background.jpg") center center/cover fixed;
+    text-align: center;
+}
+
+.offers .offers-content {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; mbnlich kayn far9 ki ndirhm wla na7ihm */
+    color: white;
+}
+
+.offers .title2 h2,
+.title3 h2,
+.gallery .title {
+
+    font-size: 30px;
+}
+
+.offers .title2 p {
+    color: white;
+    margin-top: 10px;
+}
+
+.offers .offers-content img {
+    width: 160px;
+}
+
+.offers .offers-content h3 {
+    margin: 10px 0;
+}
+
+.offers .offers-content p {
+    padding-right: 40px;
+    margin-bottom: 10px;
+}
+
+.offers .offers-content div span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #e4b95b
+}
+
+/* problem ta3 l offers section houwa m9drtch nhabat l h2 mn top ta3 la page kima dar houwa w rdhm f center , ana 
+drha bl margin f h2 w houwa nsit kifeh darha */
+
+/* offers section end  */
+/* menu section start  */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#Menu {
+    padding: 40px 0;
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Menu .title3 h2 {
+    color: #383848
+}
+
+#Menu .title3 p {
+    color: grey;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu-content img {
+    border-radius: 30px;
+    width: 60px;
+}
+
+.menu-content .food-item {
+    display: flex;
+    margin-bottom: 30px;
+    width: 380px;
+}
+
+.menu-content .name-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-content .food-item .description {
+    margin-left: 20px;
+}
+
+.name-price span {
+    font-weight: 700;
+}
+
+.right-food-items {
+    margin-left: 50px;
+}
+
+button.btn {
+    margin-top: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: #e4b95b;
+    cursor: pointer;
+}
+
+button.btn:hover {
+
+    background-color: #383848;
+}
+
+/* menu section end  */
+/* daytime section start  */
+.daytime-container {
+    color: white;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.daytime-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.daytime {
+    background: url("img/daytime_bg.jpeg") center center/cover;
+    height: 40vh;
+}
+
+.time {
+    text-align: center;
+}
+
+
+.time h3 {
+    margin: 15px 0 8px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+/* daytime section end  */
+/* gallery section start  */
+
+#Gallery {
+    background: url("img/offer-background.jpg") center center/cover no-repeat;
+    padding: 8rem 0 6rem;
+}
+
+.gallery-container {
+    text-align: center;
+}
+
+#Gallery .title {
+    color: white;
+}
+
+
+.gallery-images img {
+    border-radius: 25px;
+    width: 260px;
+    height: 260px;
+    margin: 30px;
+    flex-wrap: wrap;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.gallery-images img:hover {
+    opacity: 1;
+}
+
+/* gallery section end  */
+
+/* Contact Start  */
+#Contact {
+    width: 100%;
+}
+
+#Contact .container {
+    width: 1100px;
+}
+
+.contact-infos div {
+    line-height: 1.7;
+}
+
+.contact-infos h3 {
+    font-size: 25px;
+}
+
+.address i {
+    color: #e4b95b;
+    margin-right: 10px;
+}
+
+#Contact .contact-items {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.follow-us a {
+    background-color: #383848;
+    font-size: 25px;
+    color: white;
+    border-radius: 30px;
+}
+
+.follow-us a {
+    font-size: 25px;
+    padding: 3px;
+}
+
+.contact-infos {
+    width: 50%;
+}
+
+.contact-infos p {
+    color: #9a9a9a;
+}
+
+#Contact .contact-items form {
+    width: 50%;
+}
+
+form {
+    width: 50%;
+}
+
+form input,
+textarea {
+    width: 100%;
+    background-color: #e3e3dd;
+    border: none;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.third-btn {
+    background: #e4b95b;
+    color: white;
+}
+
+.third-btn:hover {
+    background: #383848;
+
+}
+
+/* Contact End  */
+/* Footer Start  */
+footer {
+    font-size: 15 px;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    background: url("img/offer-background.jpg")
+}
+
+/* Footer End  */
